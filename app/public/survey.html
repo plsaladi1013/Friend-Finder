@@ -1,0 +1,225 @@
+<html>
+<head> 
+    <title>Friend finder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   
+  </head>
+<body>
+  <h4>Survey Questions</h4> 
+  <hr class="my-4">
+    About You</br>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Name (Required)</span>
+    </div>
+    <input id="name" type="text" class="form-control" aria-label="name" aria-describedby="inputGroup-sizing-default">
+  </div>
+  Link to Photo Image (Required)
+  <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Image Link</span>
+        </div>
+        <input type="text"id="image" class="form-control" aria-label="image" aria-describedby="inputGroup-sizing-default">
+  </div>
+    </br>
+    <b>Question 1</b></br>
+    Your mind is always buzzing with unexplored ideas and plans.
+    <select class="custom-select" id="q1">
+        <option selected>Choose...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    </br>
+</br>
+    <b>Question 2</b>
+    Generally speaking, you rely more on your experience than your imagination.
+    <select class="custom-select" id="q2">
+            <option selected>Choose...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+       </br>
+        <b>Question 3</b></br>
+        You find it easy to stay relaxed and focused even when there is some pressure.
+        <select class="custom-select" id="q3">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+        </br>
+        <b>Question 4</b></br>
+        You rarely do something just out of sheer curiosity.
+        <select class="custom-select" id="q4">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+        </br>
+        <b>Question 5</b></br>
+        People can rarely upset you.
+        <select class="custom-select" id="q5">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+        </br>
+        <b>Question 6</b></br>
+        It is often difficult for you to relate to other people’s feelings.
+        <select class="custom-select" id="q6">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            </br>
+        <b>Question 7</b></br>
+        In a discussion, truth should be more important than people’s sensitivities.
+        <select class="custom-select" id="q7">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            </br>
+        <b>Question 8</b></br>
+        You rarely get carried away by fantasies and ideas.
+        <select class="custom-select" id="q8">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+        </br>
+        <b>Question 9</b></br>
+        You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        <select class="custom-select" id="q9">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+        </br>
+        <b>Question 10</b></br>
+        You feel more energetic after spending time with a group of people.
+        <select class="custom-select" id="q10">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+        </br>
+    </br>
+    <button id ="submitSurvey" class="btn btn-primary btn-lg btn-block">Submit</button>
+   
+</br>
+<!-- Modal Dialog Displaying Closest Friend Match -->
+<!-- Button trigger modal -->
+<button type="button" id= "showModel" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    See Best Friend Match
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" >Best Friend Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       
+        <div class="modal-body">
+            <h1 id = "bestFriend">
+
+              </h1>
+          <img id = "bestFriendImage" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../routing/apiRoutes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+ $("#showModel").hide();
+
+ $("#submitSurvey").click(function() {
+         var newScore = 0;
+         alert( "Handler for .click() called." );
+         event.preventDefault();
+         var newFriend = {
+         name: $("#name").val().trim(),
+         img: $("#image").val().trim(),
+         answers: [parseInt($("#q1").val()),
+         parseInt($("#q2").val()),
+         parseInt($("#q3").val()),
+         parseInt($("#q4").val()),
+         parseInt($("#q5").val()),
+         parseInt($("#q6").val()),
+         parseInt($("#q7").val()),
+         parseInt($("#q8").val()),
+         parseInt($("#q9").val()),
+         parseInt($("#q10").val())]   
+         };
+         $("#showModel").show();
+         alert( "Adding new friend" );
+         $.post('/api/friends', newFriend).done(function(data) {
+         console.log(data);
+         $("#bestFriend").text(data.name);
+         $("#bestFriendImage").attr("src", data.image);
+          });
+
+
+          
+        
+    });
+    
+
+
+ </script>
+  </body>
+  </html>
