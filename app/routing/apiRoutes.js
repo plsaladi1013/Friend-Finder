@@ -1,4 +1,4 @@
-var friends = require(__dirname+"\\..\\data\\friends.js");
+var friends = require("../data/friends.js");
 var newScore = 0;
 var difference = 50;
 var name = [];
